@@ -1,5 +1,17 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -200%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .App {
   text-align: center;
+  font-family: 'Tangerine', cursive;
 }
 
 .App-logo {
@@ -18,15 +30,34 @@
   color: white;
 }
 
+.App-header h1{
+    animation: fadeIn 1s ease-in both;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@keyframes stretch {
+    0% {
+        transform: scale(.75);
+        border-radius: 100%;
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.bilde{
+    margin-top: 5rem;
+    animation-name: stretch;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    margin-bottom: 5rem;
 }
