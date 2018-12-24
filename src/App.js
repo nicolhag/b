@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>
+          <h1 style={{marginTop: '-2rem'}}>
             Lise & Morten<br />gifter seg
           </h1>
           <img class="bilde" src="mortenoglise.jpg" height="150px" width="150px" />
