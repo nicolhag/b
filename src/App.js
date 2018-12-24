@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>
-            Morten og Lise<br />gifter seg
+            Lise & Morten<br />gifter seg
           </h1>
           <img class="bilde" src="mortenoglise.jpg" height="150px" width="150px" />
           <h1>
